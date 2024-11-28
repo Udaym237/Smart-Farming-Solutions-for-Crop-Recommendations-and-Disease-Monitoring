@@ -640,7 +640,7 @@ html {
 /* Style for the member image */
 .box img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 8px;
   /* Adds a slight border-radius to the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
