@@ -193,6 +193,18 @@ html {
   /* Make the section full height of the viewport */
 }
 
+/* Add the transparent black overlay */
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  z-index: 1; /* Place above the image but below the text */
+}
+
 .home .content {
   text-align: center;
   z-index: 1;
@@ -252,9 +264,13 @@ html {
   width: 100%;
   height: 100%;
   object-fit: fill;
-  z-index: 0;
+  z-index: 0; 
+
   /* Place the image behind the content */
 }
+
+
+
 
 /* Media Queries Home */
 
