@@ -20,7 +20,7 @@ def model_prediction(test_image):
     return predicted_index, confidence  # Return both the index and confidence score
 
 # Sidebar
-st.sidebar.title("AgriSens")
+st.sidebar.title("AgriWay")
 app_mode = st.sidebar.selectbox("Select Page", ["HOME", "DISEASE RECOGNITION"])
 
 # Display the image at the top of the page
