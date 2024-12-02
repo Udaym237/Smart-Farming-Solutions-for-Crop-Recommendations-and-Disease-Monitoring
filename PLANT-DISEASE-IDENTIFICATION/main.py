@@ -64,7 +64,7 @@ elif app_mode == "DISEASE RECOGNITION":
                       'Tomato___healthy']
         
         # Check confidence and display appropriate message
-        if confidence < 0.65:
+        if confidence < 0.75:
             st.warning("⚠️ The model is not confident in its prediction. This image may not belong to a plant disease, or the disease may not be in our trained dataset.")
         else:
             st.success(f"Model Prediction: {class_name[result_index]}")
