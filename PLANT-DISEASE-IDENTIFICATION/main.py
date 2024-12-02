@@ -5,7 +5,7 @@ from PIL import Image
 
 def model_prediction(test_image):
     # Load the trained model
-    model = tf.keras.models.load_model("trained_plant_disease_model.keras")
+    model = tf.keras.models.load_model("PLANT-DISEASE-IDENTIFICATION/trained_plant_disease_model.keras")
     
     # Preprocess the input image
     image = tf.keras.preprocessing.image.load_img(test_image, target_size=(128, 128))
@@ -24,7 +24,7 @@ st.sidebar.title("AgriWay")
 app_mode = st.sidebar.selectbox("Select Page", ["HOME", "DISEASE RECOGNITION"])
 
 # Display the image at the top of the page
-img = Image.open("Diseases.png")
+img = Image.open("PLANT-DISEASE-IDENTIFICATION/Diseases.png")
 st.image(img)
 
 # Main Page
